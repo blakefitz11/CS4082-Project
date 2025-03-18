@@ -75,7 +75,7 @@
                     <td>Running</td>
                 </tr>
                 <tr>
-                    <td>Javascript</td>
+                    <td id="hover-word">Javascript</td>
                     <td> < 1 year</td>
                     <td>Badminton</td>
                 </tr>
@@ -156,5 +156,18 @@
     </a>
     <br>
     <br>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const word = document.getElementById("hover-word");
+    
+        word.addEventListener("mouseover", function () {
+            word.style.backgroundColor = "green";
+        });
+    
+        word.addEventListener("mouseout", function () {
+            word.style.backgroundColor = "";
+        });
+        });
+    </script>
 </body>
 </html>
